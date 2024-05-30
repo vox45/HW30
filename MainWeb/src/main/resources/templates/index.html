@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Text Reversal</title>
+</head>
+<body>
+<h1>Enter text to reverse</h1>
+<form action="#" th:action="@{/process}" th:object="${textForm}" method="post">
+    <input type="text" th:field="*{text}" />
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
